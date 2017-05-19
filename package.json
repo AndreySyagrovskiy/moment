@@ -1,6 +1,6 @@
 {
     "name": "moment",
-    "version": "2.18.1",
+    "version": "2.18.2",
     "description": "Parse, validate, manipulate, and display dates",
     "homepage": "http://momentjs.com",
     "author": "Iskren Ivov Chernev <iskren.chernev@gmail.com> (https://github.com/ichernev)",
@@ -74,8 +74,7 @@
     "jspm": {
         "files": [
             "moment.js",
-            "moment.d.ts",
-            "locale"
+            "moment.d.ts"
         ],
         "map": {
             "moment": "./moment"
@@ -91,9 +90,6 @@
         "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
     },
     "spm": {
-        "main": "moment.js",
-        "output": [
-            "locale/*.js"
-        ]
+        "main": "moment.js"
     }
 }
